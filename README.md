@@ -1,40 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Laporan Praktikum
+- Kynantio Candra Abrari
+- 2141720206
+- TI 3A
 
-## Getting Started
+### Praktikum 1
+![Prak 1](image/ss_prak_1.png)
+### Praktikum 2
+![Prak 2](image/ss_prak_2.png)
+### Praktikum 3
+![Prak 3](image/ss_prak_3.png)
 
-First, run the development server:
+### Soal
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Coba akses http://localhost:3000/login, dan klik tombol login. Kemudian lakukan refresh page berkali-kali (jika perlu restart npm run dev nya). Simpulkan apa yang terjadi ?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Muncul pesan "Yay, berhasil login!!!" dan ketika logout muncul pesan "Anda telah logout!". Hal ini terjadi karena menggunakan Redux untuk menyimpan data login dan logout sehingga data tersebut tidak akan hilang ketika kita melakukan refresh page maupun melakukan restart npm run dev.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+2. Baris 25 dan 30 terdapat method parse(), apa yang terjadi jika kita tidak menggunakan method tersebut?
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Jika tidak menggunakan method parse() pada baris 25 dan 30, maka teks HTML yang didefinisikan dalam variabel successAlert dan failedAlert akan ditampilkan sebagai string literal, bukan sebagai HTML yang diinterpretasikan.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Pertanyaan
+![Pertanyaan](image/ss_pertanyaan.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Digunakan untuk menjalankan kode setelah component pertama kali dirender, menambahkan event listener, melakukan request data dari API, dan membersihkan event listener.
+2. Semua operasi yang seharusnya dilakukan setelah render pertama tidak akan dijalankan.
+3. Karena menggunakan camelCase untuk penamaan properti JavaScript.
+4. Bisa
+5. File store.js digunakan untuk menyimpan dan mengelola data pada aplikasi web
+6. Digunakan untuk mengambil nilai isLogin dari state Redux.
+7. Mengambil nilai totalCounter dari state counter di Redux store dan menyimpannya dalam variabel totalCounter.
